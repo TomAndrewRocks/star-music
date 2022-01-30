@@ -1,79 +1,57 @@
 import styled from 'styled-components';
-import UniversePic from '../../assets/universe 1.png';
 
-
-export const ProductsContainer = styled.div`
-  background: #191717;
-  background-position: center;
-  background-size: cover;
-  min-height: 100vh;
-  padding: 5rem calc((100vw - 1300px) / 2);
-  color: #fff;
-
-  @media screen and (min-width: 768px) {
-    background: url(${UniversePic})!important;
-  }
+export const FooterContainer = styled.footer`
+  background-color: #E4E4E4;
 `;
 
-export const ProductWrapper = styled.div`
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin: 0 auto;
-`;
-
-export const ProductCard = styled.div`
-  margin: 0 2rem;
-  line-height: 1.5;
-  width: 300px;
-
-`;
-
-export const ProductImg = styled.img`
-  height: 200px;
-  width: 200px;
-  display:flex;
-  justify-content:center;
-  margin: 0 3rem;
-`;
-
-
-export const ProductTitle = styled.h2`
-  font-weight: 400;
-`;
-
-export const ProductInfo = styled.div`
+export const FooterWrap = styled.div`
+  padding: 16px 24px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 1rem;
-  text-align: center;
-  font-size: 2.5rem;
-  font-family: 'Red Hat Display'
+  max-width: 1300px;
+  margin: 0 auto;
 `;
 
-export const ProductDesc = styled.p`
-  margin-bottom: 1rem;
+export const SocialMedia = styled.section`
+  max-width: 1300px;
+  width: 100%;
 `;
 
-export const ProductPrice = styled.p`
-  margin-bottom: 1rem;
-  font-size: 2rem;
-`;
+export const SocialMediaWrap = styled.div`
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1100px;
+  margin: 16px auto 0 auto;
 
-export const ProductButton = styled.button`
-  font-size: 1rem;
-  padding: 1rem 4rem;
-  border: none;
-  background: #e31837;
-  color: #fff;
-  transition: 0.2 ease-out;
-
-  &:hover {
-    background: #ffc500;
-    transition: 0.2s ease-out;
-    cursor: pointer;
-    color: #000;
+  @media screen and (max-width: 820px) {
+    flex-direction: column;
   }
+
+`;
+
+export const SocialLogo = styled.img`
+
+  display: flex;
+  justify-content:center;
+  height: 50rem;
+  top: 16px;
+  position:relative;
+`;
+
+export const SocialContainer = styled.div`
+   
+   @media screen and (max-width: 820px) {
+    flex-direction: column;
+    margin: 0.8rem 0;
+  }
+
+`;
+
+export const SocialText = styled.text`
+ 
+  font-family: 'Red Hat Display';
+  font-size: 25px
 `;

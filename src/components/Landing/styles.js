@@ -33,11 +33,11 @@ export const ProductCard = styled.div`
 `;
 
 export const ProductImg = styled.img`
-  height: 200px;
-  width: 200px;
+  height: 150px;
+  width: 150px;
   display:flex;
   justify-content:center;
-  margin: 0 3rem;
+  margin: 3rem 4.5rem;
 
   @media screen and (min-width: 768px) {
     display:block;
@@ -55,13 +55,12 @@ export const ProductTitle = styled.h2`
 
 export const ProductInfo = styled.div`
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 1rem;
+  padding: 1rem 5rem;
   text-align: center;
-  font-size: 2.5rem;
-  font-family: 'Red Hat Display'
+  font-size: 1.5rem;
+  font-family: 'Red Hat Display';
 `;
 
 export const ProductDesc = styled.p`

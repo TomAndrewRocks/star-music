@@ -1,6 +1,8 @@
 import React from 'react';
 import { Nav, NavLink, NavIcon, Bars, SidebarMenu, SidebarLink, LinkImageDesktop, LinkImageMobile } from './styles';
 import logo from '../../assets/logo.png'
+import menu from '../../assets/menu.png'
+
 
 const Navbar = ({ toggle }) => {
   return (
@@ -16,7 +18,7 @@ const Navbar = ({ toggle }) => {
         <SidebarLink to='/'>Landing</SidebarLink>
       </SidebarMenu>
       <NavIcon onClick={toggle}>
-          <Bars />
+          <Bars src={menu}/>
         </NavIcon>
       </Nav>
     </>

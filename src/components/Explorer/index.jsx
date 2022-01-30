@@ -2,6 +2,7 @@ import React from 'react';
 import { FooterContainer, FooterWrap, SocialContainer, SocialLogo, SocialMedia, SocialMediaWrap, SocialText } from './styles'
 
 import phone from '../../assets/phone.png'
+import mail from '../../assets/mail.png'
 
 const Explorer = ({ data }) => {
   return (

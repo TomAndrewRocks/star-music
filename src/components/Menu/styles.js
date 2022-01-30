@@ -1,6 +1,5 @@
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
-import { FaTimes } from 'react-icons/fa';
 
 export const SidebarContainer = styled.aside`
   position: fixed;
@@ -19,8 +18,9 @@ export const SidebarContainer = styled.aside`
   }
 `;
 
-export const CloseIcon = styled(FaTimes)`
+export const CloseIcon = styled.img`
   color: #dfdfdf;
+  height: 2.5rem
 `;
 
 export const Icon = styled.div`
@@ -58,9 +58,9 @@ export const SidebarLink = styled(Link)`
   font-family: 'Saira Condensed'!important;
   font-weight: 500;
 
-  &:hover {
-    color: #e31837;
-    transition: 0.2s ease-in-out;
+  &:hover { 
+    opacity: 0.6;
+    transition: 0.15s ease-out;
   }
 `;
 

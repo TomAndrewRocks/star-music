@@ -6,16 +6,13 @@ import Guitar from '../assets/guitar.png'
 import Mic from '../assets/mic 1.png'
 import Drums from '../assets/drums 1.png'
 
+import Rockstar from '../assets/guitar-player.png'
+
 
 export const ExplorerData = [
   {
     introtext1: 
     '"Ancient was the time when flints and mosses were everything."'
-  },
-  {
-    guitar: Guitar,
-    image2: Mic,
-    image3: Drums
   },
   {
     introtext2: 
@@ -25,21 +22,15 @@ export const ExplorerData = [
 
 export const MiddleData = [
   {
-    img: Rec,
-    desc:
-      'Cosmically speaking, when something is meant to be recorded it will happen.',
+    middletext:
+      'START NOW YOUR OWN PATH'
   },
   {
-    img: Mixer,
-    desc:
-      'Mix your ways wiith people, nature and the cosmos for peace guide ur way and will.',
+    img: Rockstar
   },
   {
-    img: Crown,
-    desc:
-      'Master the paths of humanity, knowledge and espiritual for the great prize.',
-    text:
-    '"Through this vasts myths, shall one remain truly devoted to its beliefs?"'
+    middletext:
+      'ART WILL SAVE YOU IN THE END'
   },
 ];
 
@@ -59,6 +50,6 @@ export const LandingData = [
     desc:
       'Master the paths of humanity, knowledge and espiritual for the great prize.',
     text:
-    '"Through this vasts myths, shall one remain truly devoted to its beliefs?"'
+    '"Through this vasts myths, shall one remain truly devoted to those sacred beliefs?"'
   },
 ];

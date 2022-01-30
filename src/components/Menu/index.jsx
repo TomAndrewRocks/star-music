@@ -8,12 +8,13 @@ import {
   SidebarRoute,
   SideBtnWrap
 } from './styles';
+import close from '../../assets/close.png'
 
 const Sidebar = ({ isOpen, toggle }) => {
   return (
     <SidebarContainer isOpen={isOpen} onClick={toggle}>
       <Icon onClick={toggle}>
-        <CloseIcon />
+        <CloseIcon src={close}/>
       </Icon>
       <SidebarMenu>
         <SidebarLink to='/'>Home</SidebarLink>

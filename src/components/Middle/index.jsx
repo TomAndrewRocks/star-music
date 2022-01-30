@@ -1,38 +1,26 @@
 import React from 'react';
-import { FooterContainer, FooterWrap, SocialContainer, SocialLogo, SocialMedia, SocialMediaWrap, SocialText } from '../Footer/styles';
-import {
-  ProductsContainer,
-  ProductWrapper,
-  ProductsHeading,
-  ProductTitle,
-  ProductCard,
-  ProductImg,
-  ProductInfo,
-  ProductDesc,
-  ProductPrice,
-  ProductButton
-} from './styles';
+import { FooterContainer, FooterWrap, SocialContainer, SocialLogo, SocialMedia, SocialMediaWrap, SocialText } from './styles';
 
-import phone from '../../assets/phone.png'
-import mail from '../../assets/mail.png'
 
-const Middle = ({ heading, data }) => {
+import Rockstar from '../../assets/guitar-player.png'
+
+const Middle = () => {
   return (
     <FooterContainer>
       <FooterWrap>
         <SocialMedia>
           <SocialMediaWrap>
            <SocialContainer>
-            <SocialLogo to='/'><img src={phone} height={30}/></SocialLogo>
             <SocialText>
-            xxxxx-xxxxx
+            START NOW YOUR OWN PATH
             </SocialText>
           </SocialContainer>
-         
           <SocialContainer>
-            <SocialLogo to='/'><img src={mail} height={30}/></SocialLogo>
+            <SocialLogo src={Rockstar} height={120}/>
+          </SocialContainer> 
+          <SocialContainer>
             <SocialText>
-            mail@gmail.com
+            ART WILL SAVE YOU IN THE END
               </SocialText>
           </SocialContainer>
           </SocialMediaWrap>

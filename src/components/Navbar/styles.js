@@ -1,6 +1,5 @@
 import styled from 'styled-components';
 import { NavLink as Link } from 'react-router-dom';
-import { MdMenu } from 'react-icons/md';
 
 export const Nav = styled.nav`
   background: transparent;
@@ -16,6 +15,11 @@ export const LinkImageDesktop = styled(Link)`
   left: 0;
   margin: 1%;
   height: 140!important;
+
+  &:hover { 
+    opacity: 0.9;
+    transition: 0.3s ease-out;
+  }
 
   @media screen and (min-width: 769px) {
    display:block;
@@ -33,6 +37,11 @@ export const LinkImageMobile = styled(Link)`
   left: 0;
   margin: 3%;
   height: 140!important;
+
+  &:hover { 
+    opacity: 0.9;
+    transition: 0.3s ease-out;
+  }
 
   @media screen and (min-width: 769px) {
    display:none;
@@ -82,10 +91,10 @@ export const NavIcon = styled.div`
   }
 `;
 
-export const Bars = styled(MdMenu)`
-  font-size: 2.3rem;
+export const Bars = styled.img`
   transform: translate(-50%, -15%);
-  color: '#dfdfdf'
+  color: '#dfdfdf';
+  height: 2.2rem
 `;
 
 export const SidebarMenu = styled.div`
