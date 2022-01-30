@@ -49,5 +49,17 @@ export const HeroH1 = styled.h1`
     transition: 0.2s ease-out;
     color: #DFDFDF;
   }
+
+  @media screen and (max-width: 600px) {
+    width: 120px;
+    display:flex;
+    justify-content:center!important;
+    position: absolute;
+    left: 35%;
+    top: 16%;
+    line-height: 10.8rem;
+    font-size: 6rem;
+
+  }
 `;
 

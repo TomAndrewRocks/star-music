@@ -1,13 +1,12 @@
 import React, { useState } from 'react';
 import Navbar from '../Navbar';
-import Sidebar from '../Sidebar';
+import Sidebar from '../Menu';
 import {
   HeroContainer,
   HeroContent,
   HeroItems,
   HeroH1
-} from './HeroElements';
-import FullHeight from "react-full-height";
+} from './styles';
 
 const Hero = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -17,7 +16,7 @@ const Hero = () => {
   };
 
   return (
-    <FullHeight canExceed={true}>
+
     <HeroContainer>
       <Navbar toggle={toggle} />
       <Sidebar isOpen={isOpen} toggle={toggle} />
@@ -27,7 +26,7 @@ const Hero = () => {
         </HeroItems>
       </HeroContent>
     </HeroContainer>
-    </FullHeight>
+
   );
 };
 

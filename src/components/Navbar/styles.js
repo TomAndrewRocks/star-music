@@ -31,7 +31,7 @@ export const LinkImageMobile = styled(Link)`
   cursor: pointer;
   position: absolute;
   left: 0;
-  margin: 1%;
+  margin: 3%;
   height: 140!important;
 
   @media screen and (min-width: 769px) {
@@ -71,20 +71,28 @@ export const NavIcon = styled.div`
 
   @media screen and (max-width: 768px) {
    display:block;
-   margin: 4%;
+   margin: 3% 1%;
+   position: absolute;
+  }
+
+  @media screen and (max-width: 488px) {
+   display:block;
+   margin: 5% 1%;
+   position: absolute;
   }
 `;
 
 export const Bars = styled(MdMenu)`
-  font-size: 3rem;
+  font-size: 2.3rem;
   transform: translate(-50%, -15%);
+  color: '#dfdfdf'
 `;
 
 export const SidebarMenu = styled.div`
   display: flex;
   position: absolute;
   right: 0;
-  margin: 0.7%;
+  margin: 1%;
 `;
 
 export const SidebarLink = styled(Link)`
@@ -92,6 +100,7 @@ export const SidebarLink = styled(Link)`
   align-items: center;
   justify-content: center;
   font-size: 2.5rem;
+  margin: 0 3px;
   text-decoration: none;
   list-style: none;
   transition: 0.2s ease-in-out;

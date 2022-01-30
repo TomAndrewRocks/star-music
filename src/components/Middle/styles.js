@@ -24,21 +24,19 @@ export const ProductWrapper = styled.div`
 
 export const ProductCard = styled.div`
   margin: 0 2rem;
-  line-height: 2;
+  line-height: 1.5;
   width: 300px;
+
 `;
 
 export const ProductImg = styled.img`
-  height: 300px;
-  min-width: 300px;
-  max-width: 100%;
+  height: 200px;
+  width: 200px;
+  display:flex;
+  justify-content:center;
+  margin: 0 3rem;
 `;
 
-export const ProductsHeading = styled.h1`
-  font-size: clamp(2rem, 2.5vw, 3rem);
-  text-align: center;
-  margin-bottom: 5rem;
-`;
 
 export const ProductTitle = styled.h2`
   font-weight: 400;
@@ -49,7 +47,7 @@ export const ProductInfo = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 2rem;
+  padding: 1rem;
   text-align: center;
   font-size: 2.5rem;
   font-family: 'Red Hat Display'
