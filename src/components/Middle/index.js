@@ -9,10 +9,10 @@ const Middle = ({ heading, data }) => {
         {data.map((product, index) => {
           return (
             <ProductCard key={index}>
-              <ProductImg src={product.img1} alt={product.alt} />
+              
               <ProductInfo>
-                <ProductDesc>{product.text1}</ProductDesc>
-                <ProductDesc>{product.text2}</ProductDesc>
+               <ProductImg src={product.img1} alt={product.alt} />
+              
               </ProductInfo>
             </ProductCard>
           );
