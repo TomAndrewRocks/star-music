@@ -5,8 +5,8 @@ import ImgBgDesktop from '../../assets/bg-intro.png';
 
 export const FooterContainer = styled.footer`
   background: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.1)),
-    url(${ImgBgDesktop});
-    background-position: center;
+    url(${ImgBgDesktop}) no-repeat center center fixed;
+    background-position: center center;
     background-size: cover;
     color: #fff;
 `;

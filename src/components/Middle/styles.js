@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const FooterContainer = styled.footer`
-  background-color: #E4E4E4;
+  background-color: #fff;
 `;
 
 export const FooterWrap = styled.div`
@@ -12,6 +12,7 @@ export const FooterWrap = styled.div`
   align-items: center;
   max-width: 1300px;
   margin: 0 auto;
+  
 `;
 
 export const SocialMedia = styled.section`
@@ -24,7 +25,7 @@ export const SocialMediaWrap = styled.div`
   justify-content: space-between;
   align-items: center;
   max-width: 1100px;
-  margin: 16px auto 0 auto;
+  margin: -96px auto 0 auto;
 
   @media screen and (max-width: 820px) {
     flex-direction: column;
@@ -36,7 +37,8 @@ export const SocialLogo = styled.img`
 
   display: flex;
   justify-content:center;
-  height: 50rem;
+  width: 100%;
+  height: auto;
   top: 16px;
   position:relative;
 `;
@@ -50,8 +52,15 @@ export const SocialContainer = styled.div`
 
 `;
 
-export const SocialText = styled.text`
+export const SocialText = styled.div`
  
-  font-family: 'Red Hat Display';
-  font-size: 25px
+ font-family: 'Red Hat Display';
+  font-size: 35px;
+  width: 3rem;
+  text-align: center;  
+  margin: 6rem 9rem 0 9rem;
+
+  @media screen and (max-width: 820px) {
+    display:none;
+  }
 `;

@@ -29,6 +29,15 @@ export const ProductCard = styled.div`
   margin: 0 2rem;
   line-height: 1.5;
   width: 300px;
+  
+
+  @media screen and (max-width: 1094px) {
+    width: 450px;
+  }
+
+  @media screen and (max-width: 768px) {
+    width: 300px;
+  }
 
 `;
 
@@ -41,6 +50,10 @@ export const ProductImg = styled.img`
 
   @media screen and (min-width: 768px) {
     display:block;
+  }
+
+  @media screen and (max-width: 1100px) {
+    margin: 3rem 9.5rem;
   }
 
   @media screen and (max-width: 768px) {
@@ -76,7 +89,7 @@ export const ProductDesc = styled.p`
 `;
 
 export const ProductText = styled.p`
-  margin-top: -3rem;
+  margin-top: -1.4rem;
 
   @media screen and (min-width: 768px) {
     display:none;
