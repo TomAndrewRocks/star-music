@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import UniversePic from '../../assets/universe 1.png';
 import ImgBgDesktop from '../../assets/hero-desktop.png';
 
-export const ProductsContainer = styled.div`
+export const Container = styled.div`
   background: #191717;
   background-position: center;
   background-size: cover;
@@ -14,18 +14,19 @@ export const ProductsContainer = styled.div`
 
     background: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.1)),
     url(${ImgBgDesktop});
+    height: 20px;
 
     } 
 `;
 
-export const ProductWrapper = styled.div`
+export const Wrapper = styled.div`
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   margin: 0 auto;
 `;
 
-export const ProductCard = styled.div`
+export const Card = styled.div`
   margin: 0 2rem;
   line-height: 1.5;
   width: 300px;
@@ -41,7 +42,7 @@ export const ProductCard = styled.div`
 
 `;
 
-export const ProductImg = styled.img`
+export const Img = styled.img`
   height: 150px;
   width: 150px;
   display:flex;
@@ -62,11 +63,11 @@ export const ProductImg = styled.img`
 `;
 
 
-export const ProductTitle = styled.h2`
+export const Title = styled.h2`
   font-weight: 400;
 `;
 
-export const ProductInfo = styled.div`
+export const Info = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
@@ -76,7 +77,7 @@ export const ProductInfo = styled.div`
   font-family: 'Red Hat Display';
 `;
 
-export const ProductDesc = styled.p`
+export const Desc = styled.p`
   margin-bottom: 1rem;
 
   @media screen and (min-width: 768px) {
@@ -88,11 +89,17 @@ export const ProductDesc = styled.p`
   }
 `;
 
-export const ProductText = styled.p`
-  margin-top: -1.4rem;
+export const Text = styled.p`
+  margin: -5.5rem 0;
+  font-size: 30px;
 
   @media screen and (min-width: 768px) {
     display:none;
+    ;
+  }
+
+  @media screen and (max-width: 790px) {
+    margin: -5.5rem 0;
     ;
   }
  

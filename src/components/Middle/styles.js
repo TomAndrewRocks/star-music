@@ -2,6 +2,10 @@ import styled from 'styled-components';
 
 export const FooterContainer = styled.footer`
   background-color: #fff;
+
+  @media screen and (max-width: 820px) {
+    background: linear-gradient(to left,#000, #dfdfdf);
+  }
 `;
 
 export const FooterWrap = styled.div`
@@ -41,6 +45,11 @@ export const SocialLogo = styled.img`
   height: auto;
   top: 16px;
   position:relative;
+
+  @media screen and (max-width: 820px) {
+    margin-bottom: -39px;
+  }
+
 `;
 
 export const SocialContainer = styled.div`
@@ -62,5 +71,9 @@ export const SocialText = styled.div`
 
   @media screen and (max-width: 820px) {
     display:none;
+  }
+
+  @media screen and (max-width: 1102px) {
+    font-size: 22px;
   }
 `;

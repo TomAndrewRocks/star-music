@@ -1,28 +1,26 @@
 import React from 'react';
 import {
-  SidebarContainer,
+  Container,
   Icon,
   CloseIcon,
-  SidebarMenu,
-  SidebarLink,
-  SidebarRoute,
-  SideBtnWrap
+  MenuContainer,
+  GoTo
 } from './styles';
 import close from '../../assets/close.png'
 
-const Sidebar = ({ isOpen, toggle }) => {
+const Menu = ({ isOpen, toggle }) => {
   return (
-    <SidebarContainer isOpen={isOpen} onClick={toggle}>
+    <Container isOpen={isOpen} onClick={toggle}>
       <Icon onClick={toggle}>
         <CloseIcon src={close}/>
       </Icon>
-      <SidebarMenu>
-        <SidebarLink to='/'>Home</SidebarLink>
-        <SidebarLink to='/'>Explorer</SidebarLink>
-        <SidebarLink to='/'>Landing</SidebarLink>
-      </SidebarMenu>
-    </SidebarContainer>
+      <MenuContainer>
+        <GoTo to='/'>Home</GoTo>
+        <GoTo to='/'>Explorer</GoTo>
+        <GoTo to='/'>Landing</GoTo>
+      </MenuContainer>
+    </Container>
   );
 };
 
-export default Sidebar;
+export default Menu;

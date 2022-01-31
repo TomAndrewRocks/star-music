@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 
-export const SidebarContainer = styled.aside`
+export const Container = styled.aside`
   position: fixed;
   z-index: 999;
   width: 100%;
@@ -34,7 +34,7 @@ export const Icon = styled.div`
   outline: none;
 `;
 
-export const SidebarMenu = styled.div`
+export const MenuContainer = styled.div`
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: repeat(3, 80px);
@@ -45,7 +45,7 @@ export const SidebarMenu = styled.div`
   }
 `;
 
-export const SidebarLink = styled(Link)`
+export const GoTo = styled(Link)`
   display: flex;
   align-items: center;
   justify-content: center;
@@ -69,7 +69,7 @@ export const SideBtnWrap = styled.div`
   justify-content: center;
 `;
 
-export const SidebarRoute = styled(Link)`
+export const Route = styled(Link)`
   background: #e31837;
   white-space: nowrap;
   padding: 16px 64px;

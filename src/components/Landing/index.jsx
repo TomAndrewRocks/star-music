@@ -1,31 +1,31 @@
 import React from 'react';
 import {
-  ProductsContainer,
-  ProductWrapper,
-  ProductCard,
-  ProductImg,
-  ProductInfo,
-  ProductDesc,
-  ProductText
+  Container,
+  Wrapper,
+  Card,
+  Img,
+  Info,
+  Desc,
+  Text
 } from './styles';
 
 const Landing = ({ data }) => {
   return (
-    <ProductsContainer>
-      <ProductWrapper>
+    <Container>
+      <Wrapper>
         {data.map((landing, index) => {
           return (
-            <ProductCard key={index}>
-              <ProductImg src={landing.img} />
-              <ProductInfo>
-                <ProductDesc>{landing.desc}</ProductDesc>
-                <ProductText>{landing.text}</ProductText>
-              </ProductInfo>
-            </ProductCard>
+            <Card key={index}>
+              <Img src={landing.img} />
+              <Info>
+                <Desc>{landing.desc}</Desc>
+                <Text>{landing.text}</Text>
+              </Info>
+            </Card>
           );
         })}
-      </ProductWrapper>
-    </ProductsContainer>
+      </Wrapper>
+    </Container>
   );
 };
 
