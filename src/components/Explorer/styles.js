@@ -9,6 +9,7 @@ export const Container = styled.footer`
     background-position: center center;
     background-size: cover;
     color: #fff;
+    width: 100%
 `;
 
 export const Wrap = styled.div`

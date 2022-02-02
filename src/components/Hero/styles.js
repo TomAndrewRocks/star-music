@@ -8,6 +8,10 @@ export const HeroContainer = styled.div`
   background-position: center;
   background-size: cover;
 
+  @media screen and (max-width: 600px) {
+    height: 95vh;
+  }
+
 `;
 
 export const HeroContent = styled.div`
@@ -55,10 +59,10 @@ export const HeroH1 = styled.h1`
     display:flex;
     justify-content:center!important;
     position: absolute;
-    left: 35%;
-    top: 16%;
-    line-height: 10.8rem;
-    font-size: 6rem;
+    left: 32.5%;
+    top: 22%;
+    line-height: 11.8rem;
+    font-size: 6.5rem;
 
   }
 `;

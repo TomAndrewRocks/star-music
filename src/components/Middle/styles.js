@@ -2,6 +2,7 @@ import styled from 'styled-components';
 
 export const FooterContainer = styled.footer`
   background-color: #fff;
+  width: 100%;
 
   @media screen and (max-width: 820px) {
     background: linear-gradient(to left,#000, #dfdfdf);
