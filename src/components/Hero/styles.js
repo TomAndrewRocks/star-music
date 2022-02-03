@@ -59,10 +59,10 @@ export const HeroH1 = styled.h1`
     display:flex;
     justify-content:center!important;
     position: absolute;
-    left: 32.5%;
-    top: 22%;
-    line-height: 11.8rem;
-    font-size: 6.5rem;
+    left: 35%;
+    top: 18%;
+    line-height: 8.8rem;
+    font-size: 5rem;
 
   }
 `;

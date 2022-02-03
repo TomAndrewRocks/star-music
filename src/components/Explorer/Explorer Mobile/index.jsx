@@ -1,49 +1,45 @@
 import React from 'react';
-import { Container, Wrap, SocialContainer, SocialContainerImage, SocialContainerText, SocialLogo, SocialMedia, SocialMediaWrap, SocialText } from './styles'
+import { Container, Wrap, ContainerImage, ContainerText, Logo, Media, MediaWrap, Text, SocialContainer } from './styles'
 
-import guitar from '../../assets/guitar.png'
-import mic from '../../assets/mic 1.png'
-import drums from '../../assets/drums 1.png'
+import guitar from '../../../assets/rotate-guitar.png'
+import mic from '../../../assets/mic 1.png'
+import drums from '../../../assets/drums 1.png'
 
-const Explorer = () => {
+const ExplorerMobile = () => {
   return (
     <Container>
       <Wrap>
-        <SocialMedia>
-          <SocialMediaWrap>
-           <SocialContainerText>
-            <SocialText>
+        <Media>
+          <MediaWrap>
+          <ContainerImage>
+          <Logo to='/'><img src={guitar} height={250}/></Logo>
+          </ContainerImage>
+           <ContainerText>
+            <Text>
             "Ancient was the time when flints and mosses were everything."
-            </SocialText>
-            <SocialText>
+            </Text>
+          </ContainerText>
+          <ContainerImage>
+          <Logo to='/'><img src={mic} height={130} style={{ transform: [{ rotate: '90deg'}]}}/></Logo>
+          </ContainerImage>
+           <ContainerText>
+            <Text>
+            "The universe started out from a long-forgotten dream."
+            </Text>
+          </ContainerText>
+          <ContainerImage>
+          <Logo to='/'><img src={drums} height={300}/></Logo>
+          </ContainerImage>
+           <ContainerText>
+            <Text>
             "Ancient was the time when flints and mosses were everything."
-            </SocialText>
-            <SocialText>
-            "Ancient was the time when flints and mosses were everything."
-            </SocialText>
-          </SocialContainerText>
-          <SocialContainerImage>
-          <SocialLogo to='/'><img src={guitar} height={300}/></SocialLogo>
-          <SocialLogo to='/'><img src={mic} height={120}/></SocialLogo>
-          <SocialLogo to='/'><img src={drums} height={300}/></SocialLogo>
-          </SocialContainerImage>
-          <SocialContainer>
-            <SocialText>
-            "The universe started out from a long-forgotten dream."
-              </SocialText>
-              <SocialText>
-            "The universe started out from a long-forgotten dream."
-              </SocialText>
-              <SocialText>
-            "The universe started out from a long-forgotten dream."
-              </SocialText>
-          </SocialContainer>
-          </SocialMediaWrap>
-          
-        </SocialMedia>
+            </Text>
+          </ContainerText>
+          </MediaWrap>   
+        </Media>
       </Wrap>
     </Container>
   );
 };
 
-export default Explorer;
+export default ExplorerMobile;

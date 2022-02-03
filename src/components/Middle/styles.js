@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const FooterContainer = styled.footer`
+export const Container = styled.div`
   background-color: #fff;
   width: 100%;
 
@@ -9,7 +9,7 @@ export const FooterContainer = styled.footer`
   }
 `;
 
-export const FooterWrap = styled.div`
+export const Wrap = styled.div`
   padding: 16px 24px;
   display: flex;
   flex-direction: column;
@@ -20,12 +20,12 @@ export const FooterWrap = styled.div`
   
 `;
 
-export const SocialMedia = styled.section`
+export const Media = styled.section`
   max-width: 1300px;
   width: 100%;
 `;
 
-export const SocialMediaWrap = styled.div`
+export const MediaWrap = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -38,7 +38,7 @@ export const SocialMediaWrap = styled.div`
 
 `;
 
-export const SocialLogo = styled.img`
+export const Logo = styled.img`
 
   display: flex;
   justify-content:center;
@@ -62,7 +62,7 @@ export const SocialContainer = styled.div`
 
 `;
 
-export const SocialText = styled.div`
+export const Text = styled.div`
  
  font-family: 'Red Hat Display';
   font-size: 35px;

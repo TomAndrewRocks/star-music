@@ -1,32 +1,32 @@
 import React from 'react';
-import { FooterContainer, FooterWrap, SocialContainer, SocialLogo, SocialMedia, SocialMediaWrap, SocialText } from './styles';
+import { Container, Wrap, SocialContainer, Logo, Media, MediaWrap, Text } from './styles';
 
 
 import Rockstar from '../../assets/guitar-player.png'
 
 const Middle = () => {
   return (
-    <FooterContainer>
-      <FooterWrap>
-        <SocialMedia>
-          <SocialMediaWrap>
+    <Container>
+      <Wrap>
+        <Media>
+          <MediaWrap>
            <SocialContainer>
-            <SocialText>
+            <Text>
             START NOW YOUR OWN PATH
-            </SocialText>
+            </Text>
           </SocialContainer>
           <SocialContainer>
-            <SocialLogo src={Rockstar} height={120}/>
+            <Logo src={Rockstar} height={120}/>
           </SocialContainer> 
           <SocialContainer>
-            <SocialText>
+            <Text>
             ART WILL SAVE YOU IN THE END
-              </SocialText>
+              </Text>
           </SocialContainer>
-          </SocialMediaWrap>
-        </SocialMedia>
-      </FooterWrap>
-    </FooterContainer>
+          </MediaWrap>
+        </Media>
+      </Wrap>
+    </Container>
   );
 };
 

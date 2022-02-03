@@ -15,8 +15,7 @@ export const Container = styled.div`
     background: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.1)),
     url(${ImgBgDesktop});
     height: 20px;
-    min-height: 75vh;
-
+    min-height: 95vh;
     } 
 `;
 
@@ -91,7 +90,6 @@ export const Desc = styled.p`
 `;
 
 export const Text = styled.p`
-  margin: 0rem 0;
   font-size: 30px;
 
   @media screen and (min-width: 768px) {
@@ -100,7 +98,7 @@ export const Text = styled.p`
   }
 
   @media screen and (max-width: 790px) {
-    margin: -0.5rem 0;
+    margin: -8.2rem 0;
     ;
   }
  
